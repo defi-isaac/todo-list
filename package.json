@@ -1,0 +1,23 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "The Odin Project - TODO List",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/defi-isaac/todo-list.git"
+  },
+  "author": "Isaac Duong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/defi-isaac/todo-list/issues"
+  },
+  "homepage": "https://github.com/defi-isaac/todo-list#readme",
+  "devDependencies": {
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
