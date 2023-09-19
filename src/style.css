@@ -6,8 +6,9 @@
 }
 
 :root {
-    --greyOne: #373C3F;
-    --greyTwo: #2F3437;
+    --greyOne: rgba(55, 60, 63);
+    --greyTwo: rgba(47,52,55);
+    --greyThree: rgba(69, 75, 79);
 }
 
 html {
@@ -47,6 +48,29 @@ body {
     height: 10vh;
     font-weight: 700;
     font-size: 1.75rem;
+}
+
+.addProject > div:last-child {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    cursor: pointer;
+    align-self: flex-end;
+    gap: 1rem;
+    width: fit-content;
+    justify-content: flex-start;
+    border-radius: 10px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.addProject > div:last-child p {
+    font-size: 1.4rem;
+    margin: 0;
+    color: red;
+}
+
+.addProject > div:last-child:hover {
+    background-color: var(--greyThree);
 }
 
 .addTask {
