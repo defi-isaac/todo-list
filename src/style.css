@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Base';
+    src: url(./fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf), url(./fonts/Space_Grotesk/static/SpaceGrotesk-Medium.ttf), 
+    url(./fonts/Space_Grotesk/static/SpaceGrotesk-Bold.ttf), url(./fonts/Space_Grotesk/static/SpaceGrotesk-Light.ttf), url(./fonts/Space_Grotesk/static/SpaceGrotesk-Regular.ttf),
+    url(./fonts/Space_Grotesk/static/SpaceGrotesk-SemiBold.ttf);
+}
+
+:root {
+    --greyOne: #373C3F;
+    --greyTwo: #2F3437;
+}
+
+html {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Base'
+}
+
+body > div {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 3fr;
+    margin: 0;
+    color: #fff
+}
+
+.divider {
+    background-color: #fff;
+    margin: 20px 0 20px 0;
+    height: 1px;
+}
+
+.addProject {
+    grid-column: 1;
+    background-color: var(--greyOne);
+}
+
+.addProject > div:first-child {
+    display: flex;
+    align-items: flex-end;
+    height: 10vh;
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+.addTask {
+    grid-column: 2;
+    background-color: var(--greyTwo);
+}
