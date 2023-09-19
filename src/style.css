@@ -33,24 +33,42 @@ body {
 
 .divider {
     background-color: #fff;
-    margin: 20px 0 20px 0;
     height: 1px;
 }
 
-.addProject {
+.projCol {
     grid-column: 1;
     background-color: var(--greyOne);
+    gap: 1.5rem;
 }
 
-.addProject > div:first-child {
+.projCol > div:first-child {
     display: flex;
     align-items: flex-end;
     height: 10vh;
     font-weight: 700;
-    font-size: 1.75rem;
+    font-size: 2rem;
 }
 
-.addProject > div:last-child {
+.projCol > div:nth-child(3) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.projCol img {
+    filter: invert(100%) sepia(1%) saturate(7405%) hue-rotate(356deg) brightness(116%) contrast(113%);
+    transition: transform 0.3s
+}
+
+.projCol img:hover {
+    transform: scale(1.2)
+}
+
+.projCol > div:last-child {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -63,17 +81,17 @@ body {
     padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
-.addProject > div:last-child p {
+.projCol > div:last-child p {
     font-size: 1.4rem;
     margin: 0;
     color: red;
 }
 
-.addProject > div:last-child:hover {
+.projCol > div:last-child:hover {
     background-color: var(--greyThree);
 }
 
-.addTask {
+.taskCol {
     grid-column: 2;
     background-color: var(--greyTwo);
 }
